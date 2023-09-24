@@ -21,7 +21,7 @@ public class EmailController {
 	public String getEmailId(@RequestParam("email") String email, Model model ) {
 		model.addAttribute("email",email);
 		return "compose_email";
-	}
+	}	
 	
 	@PostMapping("/triggerEmail")
 	public String triggerEmail(Email email,Model model) {
